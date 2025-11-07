@@ -10,6 +10,8 @@ import {
   SearchEmbed,
 } from "https://unpkg.com/@thoughtspot/visual-embed-sdk/dist/tsembed.es.js";
 
+//PROD liveboard: 30c73d7d-b735-4c27-a4fa-5a3f9f24698f
+//DEV liveboard: dab294fa-9717-480e-9cf7-b4e80e17813c
 // Set the tsURL to point to your ThoughtSpot instance, and the lbID to reference your liveboard
 const tsURL = "https://ecolab-dev.thoughtspot.cloud";
 const lbID = "dab294fa-9717-480e-9cf7-b4e80e17813c";
@@ -20,7 +22,7 @@ console.log("tse.js test" + lbID);
 const loadApp = () => {
   init({
     thoughtSpotHost: tsURL,
-    authType: AuthType.None,
+    authType: AuthType.EmbeddedSSO,
   });
 
   // Call the embedding function immediately after initialization.
