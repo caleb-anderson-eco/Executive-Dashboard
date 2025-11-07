@@ -20,7 +20,7 @@ console.log("tse.js test" + lbID);
 const loadApp = () => {
   init({
     thoughtSpotHost: tsURL,
-    authType: AuthType.External,
+    authType: AuthType.None,
   });
 
   // Call the embedding function immediately after initialization.
