@@ -17,7 +17,7 @@ const loadApp = () => {
     console.log("Initializing ThoughtSpot SDK...");
     init({
       thoughtSpotHost: tsURL,
-      authType: AuthType.EmbeddedSSO,
+      authType: AuthType.None,
     });
     console.log("SDK initialized successfully with EmbeddedSSO.");
   } catch (error) {
