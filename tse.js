@@ -2,7 +2,8 @@
 import {
   init,
   AuthType,
-  LiveboardEmbed
+  LiveboardEmbed,
+  //EmbedEvent
 } from "https://unpkg.com/@thoughtspot/visual-embed-sdk/dist/tsembed.es.js";
 
 // Save these imports for TrustedAuthTokenCookieless
@@ -69,6 +70,8 @@ const embedLiveboard = () => {
       showLiveboardTitle: false,
       showLiveboardDescription: false,
       isLiveboardHeaderSticky: true,
+      isLiveboardCompactHeaderEnabled: true,
+      hideIrrelevantChipsInLiveboardTabs: true,
     });
 
     liveboardEmbed.render()
