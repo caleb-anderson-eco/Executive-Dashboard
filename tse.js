@@ -28,6 +28,15 @@ const loadApp = () => {
       authType: authType,
       // getAuthToken: getTokenService,
       // disableTokenVerification: true,
+      // 💡 APPLY GLOBAL HEADER CONTROLS HERE
+      embedConfig: {
+        // Hides the three-dot menu (Request Access, Download)
+        enableActionMenu: false,
+        // Hides the star button
+        enableFavorite: false,
+        // Hides the Share/Pin buttons
+        enableActionNav: false,
+      },
       customizations: {
         style: {
           //customCSSUrl: "https://cdn.jsdelivr.net/gh/thoughtspot/custom-css-demo/css-variables.css", // location of your style sheet
