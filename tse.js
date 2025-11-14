@@ -28,15 +28,6 @@ const loadApp = () => {
       authType: authType,
       // getAuthToken: getTokenService,
       // disableTokenVerification: true,
-      // 💡 APPLY GLOBAL HEADER CONTROLS HERE
-      embedConfig: {
-        // Hides the three-dot menu (Request Access, Download)
-        enableActionMenu: false,
-        // Hides the star button
-        enableFavorite: false,
-        // Hides the Share/Pin buttons
-        enableActionNav: false,
-      },
       customizations: {
         style: {
           //customCSSUrl: "https://cdn.jsdelivr.net/gh/thoughtspot/custom-css-demo/css-variables.css", // location of your style sheet
@@ -73,23 +64,11 @@ const embedLiveboard = () => {
     const liveboardEmbed = new LiveboardEmbed(embedContainer, {
       frameParams: { width: '100%', height: '100%', style: 'border:none;' },
       liveboardId: lbID,
-      fullHeight: true,
-      lazyLoadingForFullHeight: true,
+      fullHeight: false,
+      //lazyLoadingForFullHeight: true,
       showLiveboardTitle: false,
       showLiveboardDescription: false,
       isLiveboardHeaderSticky: true,
-
-      // and "Download" options, effectively hiding Request Access.
-
-      enableActionMenu: false,
-
-      // Hides the "Favorite" star button.
-      enableFavorite: false,
-
-      // --- OTHER RELATED CONTROLS ---
-
-      // Hides the "Share" and "Pin" buttons usually found near the top right.
-      enableActionNav: false,
     });
 
     liveboardEmbed.render()
