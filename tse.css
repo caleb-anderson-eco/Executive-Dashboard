@@ -1,7 +1,7 @@
 body {
   font-family: Optimo-Plain, Helvetica Neue, Helvetica, Arial, sans-serif;
-  background-color: purple;
-  color: #1d232f;
+  background-color: white;
+  color: #006bd3;
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
 ul {
   list-style: none;
   color: white;
-  background-color: black;
+  background-color: white;
   padding: 8px;
   height: 2em;
 }
@@ -37,3 +37,14 @@ ul {
   height: 90vh;
   background-color: white;
 }
+
+/* Adjust the banner */
+/* #header-banner {
+  width: 50%;
+  height: 50%;
+  object-fit: fill;
+  object-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
