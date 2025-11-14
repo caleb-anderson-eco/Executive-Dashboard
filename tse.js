@@ -7,9 +7,12 @@ import {
 
 // PROD liveboard: 30c73d7d-b735-4c27-a4fa-5a3f9f24698f
 // DEV liveboard: dab294fa-9717-480e-9cf7-b4e80e17813c
+// DEV in DEV liveboard: 
 
 const tsURL = "https://ecolab-dev.thoughtspot.cloud";
-const lbID = "dab294fa-9717-480e-9cf7-b4e80e17813c";
+const lbID = "";
+
+
 
 // Initializes the application with ThoughtSpot
 const loadApp = () => {
@@ -19,7 +22,8 @@ const loadApp = () => {
       thoughtSpotHost: tsURL,
       authType: AuthType.None,
     });
-    console.log("SDK initialized successfully with EmbeddedSSO.");
+    console.log(`(${lbID}) is the liveboard`);
+    console.log("SDK initialized successfully with AuthType.None.");
   } catch (error) {
     console.error("Error during SDK initialization:", error);
     return;
