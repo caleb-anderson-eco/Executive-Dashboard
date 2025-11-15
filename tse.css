@@ -1,5 +1,5 @@
 body {
-  font-family: Optimo-Plain, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: white;
   color: #006bd3;
 }
@@ -39,12 +39,14 @@ ul {
 }
 
 /* Adjust the banner */
-/* #header-banner {
-  width: 50%;
-  height: 50%;
+#header-banner {
+  width: 600px;
+  height: 150px;
   object-fit: fill;
-  object-position: center;
+  object-position: left;
   display: block;
   margin-left: auto;
   margin-right: auto;
-} */
+  margin-top: auto;
+  margin-bottom: auto;
+}
