@@ -3,6 +3,7 @@ import {
   init,
   AuthType,
   LiveboardEmbed,
+  AppEmbed,
   EmbedEvent,
   HostEvent
 } from "https://unpkg.com/@thoughtspot/visual-embed-sdk/dist/tsembed.es.js";
@@ -74,7 +75,9 @@ const embedLiveboard = () => {
       isLiveboardHeaderSticky: true,
       isLiveboardCompactHeaderEnabled: true,
       hideIrrelevantChipsInLiveboardTabs: true,
-      hiddenTabs: ['8654cbb1-adb8-41a7-915d-dba2c9ac82b1', 'b2b67773-cab1-4103-ba18-875b8c313b06'],
+      hideLiveboardHeader: false,
+      //disabledActions: [Action.AddToFavorites]
+      //hiddenTabs: ['8654cbb1-adb8-41a7-915d-dba2c9ac82b1'],
     });
 
     liveboardEmbed.render()
@@ -89,7 +92,41 @@ const embedLiveboard = () => {
   }
 };
 
+/*
+///Retired Logic//
 
+//const homeTabID = "30c73d7d-b735-4c27-a4fa-5a3f9f24698f"
+//const masterTabID = "1780d51f-7614-4f4c-a588-28b2b2e2c55b"
+//const transactionalTabID = "19efb7d1-75e3-4f49-84c5-3d8244b1d992"
+//const errorsTabID = "8654cbb1-adb8-41a7-915d-dba2c9ac82b1"
+//const FAQTabID = "c5bdfcb7-acd5-4a91-8157-23a4ab3687fe"
+
+const onHome = () => {
+  console.log("Open Home Tab");
+}
+const onMasterData = () => {
+  console.log("Open Master Data Tab");
+}
+const onTransactionalData = () => {
+  console.log("Open Transactional Data Tab");
+}
+const onErrors = () => {
+  console.log("Open Errors by Column Tab");
+}
+const onFAQ = () => {
+  console.log("Open FAQ Tab");
+}
+
+document.getElementById('home-link').addEventListener('click', onHome);
+document.getElementById("master-data-link").addEventListener("click", onMasterData);
+document.getElementById('transactional-data-link').addEventListener('click', onTransactionalData);
+document.getElementById('errors-link').addEventListener('click', onErrors);
+document.getElementById("faq-link").addEventListener("click", onFAQ);
+*/
+
+/////////////////////////////////////////
+// The following code should be last! //
+/////////////////////////////////////////
 // Start the application
 window.onload = () => {
   console.log("Window loaded. Starting ThoughtSpot embed process...");

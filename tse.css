@@ -15,7 +15,8 @@ h1 {
 ul {
   list-style: none;
   color: white;
-  background-color: white;
+  background-color: #006bd3;
+  ;
   padding: 8px;
   height: 2em;
 }
